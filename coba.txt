@@ -1,0 +1,7 @@
+Seluruh file website kita akan dihosting di GitHub artinya untuk melakukan perubahan Anda bisa melakukannya melalui github, atau langsung dari desktop melalui perintah-perintah git.
+1. Membuat Repository GitHub
+Untuk membuat GitHub Pages terdapat dua pilihan, yang pertama adalah GitHub Pages untuk halaman GitHub kita dan kedua adalah GitHub Pages untuk website Project kita.
+Login terlebih dahulu ke situs github.com, lalu buat repository baru. Klik Create repository.
+2. Membuat file index.html
+Di halaman selanjutnya Klik tombol “Create a new file here” dan beri nama index.html masukan code HTML.y. Anda juga bisa menambahkan file CSS untuk style.y.
+Saking baik hatinya github.com bukan hanya memberikan hosting & subdomain gratis saja sobat juga bisa merubah subdomain yang diberikan github.com dengan domain sobat sendiri (berbayar).
