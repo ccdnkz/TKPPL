@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Project TKPPL
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+
+  body
+
+    article
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Button
+        h5 Button didefinisikan sebagai "tombol tekan" yang berfungsi menjalankan suatu script apabila di-klik.
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Button
+        h4 Contoh-contoh Style pada Button
+        ul
+          li <button type='button' class='btn btn-default btn-lg'>Default</button>
+          li <button type='button' class='btn btn-primary'>Primary</button>
+          li <button type='button' class='btn btn-success'>Success</button>
+          li <button type='button' class='btn btn-info'>Info</button>
+          li <button type='button' class='btn btn-warning'>Warning</button>
+          li <button type='button' class='btn btn-danger'>Danger</button>
+          li <button type='button' class='btn btn-link'>Link</button>
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Contoh-contoh Button Tags
+        p Button juga bisa dibuat untuk menuju link yang diinginkan
+        p Contoh button dengan link
+        <a href='#' class='btn btn-info' role='button'>Link Button</a>
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Ukuran pada Button
+        p Kita juga bisa mengatur ukuran dari sebuah button
+        ul
+          li Ukuran-ukuran pada button terdiri dari :
+          li <button type="button" class="btn btn-primary btn-lg">Large</button>
+          li <button type="button" class="btn btn-primary btn-md">Medium</button>    
+          li <button type="button" class="btn btn-primary btn-sm">Small</button>
+          li <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Block Level Button
+        ul
+          li Contoh dari Block Level Button yaitu :
+          li <button type="button" class="btn btn-primary btn-block">Button 1</button>
+          li <button type="button" class="btn btn-default btn-block">Button 2</button>
+          li Kita juga bisa mengatur ukuran dari Block Level Button seperti contoh dibawah ini
+          li <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+          li <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+          li <button type="button" class="btn btn-default btn-lg btn-block">Button 2</button>
+          li <button type="button" class="btn btn-default btn-sm btn-block">Button 2</button>
+
+    script(src='build/build.js')
