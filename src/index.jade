@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Project TKPPL
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet',href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  body
+
+    article
+      section(data-bespoke-backdrop='emphatic')
+        h1 Alert
+        p Alert digunakan untuk menampilkan suatu pemberitahuan, pada bootstrap alert dapat digunakan dengan menambah kan class <code>.alert</code> dan diikuti dengan class yang berhubungan seperti <code>.alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code>,<br> atau <code>.alert-danger</code>
+      section(data-bespoke-backdrop='emphatic')
+        h1 Alert
+        h2 Contoh penggunaan alert-success
+        ul
+          li
+          li Alert success <div class="alert alert-success">Contoh Alert-Success</div>
+          li Alert info <div class="alert alert-info">Contoh Alert-info</div>
+          li Alert warning <div class="alert alert-warning">Contoh Alert-warning</div>
+          li Alert danger <div class="alert alert-danger">Contoh Alert-danger</div>
+      section(data-bespoke-backdrop='emphatic')
+        h1 Alert
+        h2 Tombol close
+        p kita juga dapat menambahkan tombol close pada alert dengan menambahkan <code>class="close"</code> dan <code>data-dismiss="alert"</code> pada suatu link atau button <br> contoh : <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
+      section(data-bespoke-backdrop='emphatic')
+        h1 Alert
+        h2 Animasi alert
+        p pada bootstrap kita dapat menambah animasi saat alert aka ditutup dengan menambah class <code>.fade</code> dan <code>.in</code><br>Contoh :<div class="alert alert-success fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
+    script(src='build/build.js')
