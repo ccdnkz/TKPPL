@@ -1,0 +1,106 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Project TKPPL
+    link(rel='stylesheet',href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Jumbotron
+        ul
+          li Kotak besar seperti container
+          li Dengan warna latar biasanya berwarna abu-abu 
+        ul
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Jumbotron dalam container
+        
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+           &lt;div class="container">
+           &lt;div class="jumbotron">
+           &lt;h3>ini adalah teks didalam jumbotron&lt;/h3>
+           &lt;/div>
+           &lt;/div>
+
+       section(data-bespoke-backdrop='emphatic')
+        h3 Jumbotron diluar container
+        
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+           &lt;div class="jumbotron">
+           &lt;h3>ini adalah teks didalam jumbotron&lt;/h3>
+           &lt;/div>
+           &lt;div class="container">
+           &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Panels
+        ul
+          li Panel Primary <div class="panel panel-primary"><div class="panel-heading">Heading</div>Content</div>
+          li Panel Info <div class="panel panel-info"><div class="panel-heading">Heading</div>Content</div>
+          li Panel Danger <div class="panel panel-danger"><div class="panel-heading">Heading</div>Content</div>
+        ul
+
+      section
+        h2 Panels
+        ul
+          li Panel Warning <div class="panel panel-warning"><div class="panel-heading">Heading</div>Content</div>
+          li Panel Success <div class="panel panel-success"><div class="panel-heading">Heading</div>Content</div>
+        ul
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Forms
+        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        ul
+          li Bullet 1
+          li Bullet 2
+          li Bullet 3
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Grid Basic
+        p Code
+        pre.
+           &lt;div class="container-fluid">
+           &lt;div class="row">
+             &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+             &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+             &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+           &lt;/div>
+           &lt;/div>
+
+      section(data-bespoke-hash='named-route')
+        h2 Navbar
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Affix
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+
+      section
+        h2.bullet Just the beginning...
+        br
+        ul
+          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+          li Edit JavaScript in <em>'src/scripts/main.js'</em>
+        br
+        ul
+          li
+            strong Enjoy! :)
+            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+
+    script(src='build/build.js')
