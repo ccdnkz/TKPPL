@@ -1,0 +1,6 @@
+--Sound Memory Game
+
+Merupakan suatu game yang memerlukan keterampilan memori.
+Dalam game ini terdapat empat tombol berwarna dengan masing-masing nada yang dihasilkan ketika ditekan.
+Satu babak akan terdiri dari satu atau lebih tombol yang hidup secara acak dan pemain harus melakukan penekanan ulang tombol sesuai yang sudah diperlihatkan.
+Jumlah tombol yang harus ditekan akan meningkat seiring bertambahnya level.
