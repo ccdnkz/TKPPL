@@ -11,10 +11,118 @@ html
   body
 
     article
-      section(data-bespoke-backdrop='emphatic')
+      section
+        h1 Typography
+        h3 Heading
+        p Bootstrap mengubah style heading html menjadi
+        .kotak
+          h1 Heading 1 (36 px)
+          h2 Heading 2 (30 px)
+          h3 Heading 3 (24 px)
+          h4 Heading 4 (18 px)
+          h5 Heading 5 (14 px)
+          h6 Heading 6 (12 px)
+      section
+        h1 Small
+        .kotak
+          h1
+            | Heading 1 
+            small Heading 1
+          h2
+            | Heading 2 
+            small Heading 2
+          h3
+            | Heading 3 
+            small Heading 3
+          h4
+            | Heading 4 
+            small Heading 4
+          h5
+            | Heading 5 
+            small Heading 5
+          h6
+            | Heading 6 
+            small Heading 6
+      section
+        h1 Mark
+        p 
+          |Mark digunakan untuk membuat highlight pada suatu text dengan menambahkan
+          code &lt;mark&gt;
+        p 
+          | Contoh : 
+          mark Mark
+      section
+        h1 Abbr
+        p 
+          | Abbr digunakan untuk menambahkan garis bawah dengan bentuk titik, ketika text dengan tag 
+          code &lt;abbr&gt;
+          |  disorot ( hover ) akan muncul deskripsi untuk text tersebut.
+        p
+          | Contoh : 
+          abbr(title='Contoh Abbr') Abbr
+      section
+        h1 Blockquote
+        p Blockquote biasanya digunakan untuk menampilkan konten dari sumber luar
+        p Contoh : 
+        .kotakq
+          blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        p 
+          | Kita juga dapat menambahkan class
+          code .blockquote-reverse
+          | yang merupakan kebalikan dari blockquote
+        p Contoh : 
+        .kotakq
+          blockquote.blockquote-reverse Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      section
+        h1 Code
+        p Bootstrap mengubah style tag 
+          code &lt;code&gt;
+          |  menjadi
+        .kotak 
+          | Contoh Penggunaan Tag 
+          code &lt;code&gt;
+      section
+        h1 Kbd
+        p Bootstrap mengubah style tag 
+          code &lt;kbd&gt;
+          |  menjadi
+        .kotak 
+          | Contoh Penggunaan Tag 
+          kbd ctrl+c
+      section
+        h1 pre
+        p Bootstrap mengubah style tag 
+          code &lt;pre&gt;
+          |  menjadi
+        pre Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      section
+        h1 Contextual Colors and Backgrounds
+        p Bootstrap memiliki class yang dapat digunakan untuk mengubah warna text maupun warna latar text tersebut, dimana setiap warna memiliki arti tersendiri
+        p Contoh Warna Text :
+        .kotakcon
+          p.text-muted Muted
+          p.text-primary Primary
+          p.text-success Success
+          p.text-info Info
+          p.text-warning Warning
+          p.text-danger danger
+      Section
+        h1 Contextual Colors and Backgrounds
+        p Contoh Warna Latar Text :
+        .kotakcon
+          p.bg-primary Primary
+          p.bg-success Success
+          p.bg-info Info
+          p.bg-warning Warning
+          p.bg-danger danger
+        p selengkapnya cek di <a href="http://www.w3schools.com/bootstrap/bootstrap_typography.asp">sini</a>
+      section
         h1 Alert
         p Alert digunakan untuk menampilkan suatu pemberitahuan, pada bootstrap alert dapat digunakan dengan menambah kan class <code>.alert</code> dan diikuti dengan class yang berhubungan seperti <code>.alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code>,<br> atau <code>.alert-danger</code>
-      section(data-bespoke-backdrop='emphatic')
+      section
         h1 Alert
         h2 Contoh penggunaan alert-success
         ul
@@ -23,12 +131,243 @@ html
           li Alert info <div class="alert alert-info">Contoh Alert-info</div>
           li Alert warning <div class="alert alert-warning">Contoh Alert-warning</div>
           li Alert danger <div class="alert alert-danger">Contoh Alert-danger</div>
-      section(data-bespoke-backdrop='emphatic')
+      section
         h1 Alert
         h2 Tombol close
         p kita juga dapat menambahkan tombol close pada alert dengan menambahkan <code>class="close"</code> dan <code>data-dismiss="alert"</code> pada suatu link atau button <br> contoh : <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
-      section(data-bespoke-backdrop='emphatic')
+      section
         h1 Alert
         h2 Animasi alert
         p pada bootstrap kita dapat menambah animasi saat alert aka ditutup dengan menambah class <code>.fade</code> dan <code>.in</code><br>Contoh :<div class="alert alert-success fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
+      section
+        h1 Collapse
+        p collapse sangat berguna jika kita ingin menyembunyikan konten dalam jumlah besar
+        p kita dapat menambahkan class <code>.collapse</code> untuk menyembunyikan suatu konten, dan untuk menampilkan konten tersebut kita dapat membuat suatu
+          | objek yang berisikan <code>data-toggle="collapse"</code> dan <code>data-target="#id"</code>(<code>&lt;button&gt;</code>)</code> atau <code>href="#id"</code>(<code>&lt;a&gt;</code>) untuk mengatur konten tersebut, objek tersebut dapat berupa <code>&lt;button&gt;</code>, ataupun <code>&lt;a&gt;</code>
+      section
+        h2 Contoh Penggunaan Collapse
+        button.btn.btn-default(type='button',data-toggle='collapse',data-target="#target-collapse1") Collapse
+        .collapse#target-collapse1 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      section
+        h2 Collapsible panel
+        p kita juga dapat membuat collapsible panel dengan bootstrap
+        p Contoh
+        .panel-group
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse',href='#target-collapse2') Judul Panel
+            .panel-collapse.collapse#target-collapse2
+              .panel-body satu
+              .panel-body dua
+              .panel-footer tiga
+      section
+        h1 Wells
+        p wells digunakan untuk menambahkan border disekitar sebuah elemen dengan warna background abu-abu
+        p wells dapat digunakan dengan menambahkan class <code>.well</code> pada suatu elemen
+        p Contoh
+        .well Contoh well
+      section
+        h2 Ukuran Wells
+        p kita juga dapat mengubah ukuran wells dengan menambahkan class <code>.well-sm</code> untuk well kecil dan <code>.well-lg</code> untuk well besar
+        button.btn.btn-success#bwell-kecil(data-target='#well-kecil',data-toggle='collapse') Contoh well kecil
+        .well.well-sm.collapse#well-kecil Contoh well dengan ukuran kecil
+        button.btn.btn-info#bwell-normal(data-target='#well-normal',data-toggle='collapse') Contoh well normal
+        .well.collapse#well-normal Contoh well dengan ukuran normal
+        button.btn.btn-warning#bwell-besar(data-target='#well-besar',data-toggle='collapse') Contoh well besar
+        .well.well-lg.collapse#well-besar Contoh well dengan ukuran besar
+      section
+        h1 Glyphicons
+        p Bootstrap Menyediakan beberapa icon yg siap digunakan
+        p list Glyphicons Bootstrap
+        table.table.table-striped.table-bordered
+          thead
+            tr
+              td Icon
+              td Class
+              td Icon
+              td Class
+          tbody
+            tr
+              td
+                span.glyphicon.glyphicon-asterisk
+              td  glyphicon glyphicon-asterisk
+              td
+                span.glyphicon.glyphicon-plus
+              td glyphicon glyphicon-plus
+            tr
+              td
+                span.glyphicon.glyphicon-minus
+              td  glyphicon glyphicon-minus
+              td
+                span.glyphicon.glyphicon-euro
+              td glyphicon glyphicon-euro
+            tr
+              td
+                span.glyphicon.glyphicon-cloud
+              td  glyphicon glyphicon-cloud
+              td
+                span.glyphicon.glyphicon-envelope
+              td glyphicon glyphicon-envelope
+            tr
+              td
+                span.glyphicon.glyphicon-pencil
+              td  glyphicon glyphicon-pencil
+              td
+                span.glyphicon.glyphicon-glass
+              td glyphicon glyphicon-glass
+            tr
+              td
+                span.glyphicon.glyphicon-music
+              td  glyphicon glyphicon-music
+              td
+                span.glyphicon.glyphicon-search
+              td glyphicon glyphicon-search
+            tr
+              td
+                span.glyphicon.glyphicon-heart
+              td  glyphicon glyphicon-heart
+              td
+                span.glyphicon.glyphicon-star
+              td glyphicon glyphicon-star
+            tr
+              td
+                span.glyphicon.glyphicon-star-empty
+              td  glyphicon glyphicon-star-empty
+              td
+                span.glyphicon.glyphicon-user
+              td glyphicon glyphicon-user
+            tr
+              td
+                span.glyphicon.glyphicon-film
+              td  glyphicon glyphicon-film
+              td
+                span.glyphicon.glyphicon-th-large
+              td glyphicon glyphicon-th-large
+      section
+        h1 Glyphicons
+        table.table.table-striped.table-bordered
+          thead
+            tr
+              td Icon
+              td Class
+              td Icon
+              td Class
+          tbody
+            tr
+              td
+                span.glyphicon.glyphicon-th
+              td  glyphicon glyphicon-th
+              td
+                span.glyphicon.glyphicon-th-list
+              td glyphicon glyphicon-th-list
+            tr
+              td
+                span.glyphicon.glyphicon-ok
+              td  glyphicon glyphicon-ok
+              td
+                span.glyphicon.glyphicon-remove
+              td glyphicon glyphicon-remove
+            tr
+              td
+                span.glyphicon.glyphicon-zoom-in
+              td  glyphicon glyphicon-zoom-in
+              td
+                span.glyphicon.glyphicon-zoom-out
+              td glyphicon glyphicon-zoom-out
+            tr
+              td
+                span.glyphicon.glyphicon-off
+              td  glyphicon glyphicon-off
+              td
+                span.glyphicon.glyphicon-signal
+              td glyphicon glyphicon-signal
+            tr
+              td
+                span.glyphicon.glyphicon-cog
+              td  glyphicon glyphicon-cog
+              td
+                span.glyphicon.glyphicon-trash
+              td glyphicon glyphicon-trash
+            tr
+              td
+                span.glyphicon.glyphicon-home
+              td  glyphicon glyphicon-home
+              td
+                span.glyphicon.glyphicon-file
+              td glyphicon glyphicon-file
+            tr
+              td
+                span.glyphicon.glyphicon-time
+              td  glyphicon glyphicon-time
+              td
+                span.glyphicon.glyphicon-road
+              td glyphicon glyphicon-road
+            tr
+              td
+                span.glyphicon.glyphicon-download-alt
+              td  glyphicon glyphicon-download-alt
+              td
+                span.glyphicon.glyphicon-download
+              td glyphicon glyphicon-download
+        p selengkapnya cek di <a href="http://getbootstrap.com/components/">sini</a>
+      section
+        h1 Modal
+        p Modal digunakan untuk menampilkan kotak dialog pada suatu halaman
+        p Contoh Modal :
+        button.btn.btn-info(type='button',data-toggle='modal',data-target='#contohModal') Munculkan Pesan
+        .modal.fade#contohModal(role='dialog',data-backdrop='false')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button',data-dissmiss='modal') &times;
+                h4 Contoh Modal
+              .modal-body
+                p
+                  b Hello!!!
+              .modal-footer
+                button.btn.btn-default(data-dismiss='modal') Close
+      section
+        h1 Modal
+        p ada 3 ukuran modal yaitu kecil, sedang, dan besar
+        button.btn.btn-success#bcontohModalKecil(type='button',data-toggle='modal',data-target='#contohModalKecil') Contoh Modal Kecil
+        br
+        .modal.fade#contohModalKecil(role='dialog',data-backdrop='false')
+          .modal-dialog.modal-sm
+            .modal-content
+              .modal-header
+                button.close(type='button',data-dissmiss='modal') &times;
+                h4 Contoh Modal
+              .modal-body
+                p
+                  b Hello!!!
+              .modal-footer
+                button.btn.btn-default(data-dismiss='modal') Close
+        button.btn.btn-warning#bcontohModalSedang(type='button',data-toggle='modal',data-target='#contohModalSedang') Contoh Modal Sedang
+        br
+        .modal.fade#contohModalSedang(role='dialog',data-backdrop='false')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button',data-dissmiss='modal') &times;
+                h4 Contoh Modal
+              .modal-body
+                p
+                  b Hello!!!
+              .modal-footer
+                button.btn.btn-default(data-dismiss='modal') Close
+        button.btn.btn-danger#bcontohModalBesar(type='button',data-toggle='modal',data-target='#contohModalBesar') Contoh Modal Besar
+        .modal.fade#contohModalBesar(role='dialog',data-backdrop='false')
+          .modal-dialog.modal-lg
+            .modal-content
+              .modal-header
+                button.close(type='button',data-dissmiss='modal') &times;
+                h4 Contoh Modal
+              .modal-body
+                p
+                  b Hello!!!
+              .modal-footer
+                button.btn.btn-default(data-dismiss='modal') Close
     script(src='build/build.js')
