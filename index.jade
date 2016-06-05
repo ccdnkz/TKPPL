@@ -261,4 +261,39 @@ html
             &lt;li>&lt;a href="#">Menu 2&lt;/a>&lt;/li>
             &lt;li>&lt;a href="#">Menu 3&lt;/a>&lt;/li>
           &lt;/ul>
+      section
+        ul
+          li
+            h2 Progress Bars
+          li
+            p Contoh progress bar yang telah terisi 70%
+          li
+            .progress
+              .progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width:70%')
+                span 70%
+          li
+            p Code yang terkait :
+            pre.      
+              &lt;div class="progress"&gt;
+                &lt;div class="progress-bar" role="progressbar" aria-valuenow="70" 
+                aria-valuemin="0" aria-valuemax="100" style="width:70%"&gt;
+                70%
+                &lt;/div>
+              &lt;/div>
+      section
+        ul
+          li
+            h3 Atribut yang terkait :
+          li
+            code role="progressbar"
+            p Atribut peran
+          li
+            code aria-valuenow="(0-100%)""
+            p Atribut Isi
+          li
+            code aria-valuemin="(int)"
+            p Atribut Nilai Awal
+          li
+            code aria-valuemax="(int)"
+            p Atribut Nilai Akhir
     script(src='build/build.js')
