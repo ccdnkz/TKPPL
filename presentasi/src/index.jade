@@ -210,6 +210,72 @@ html
                         <a href="#">TKPPL</a>
                         <a href="#">Jarkom</a>
                         <a href="#">PBO</a>
+    section
+        
+            h2 Basic List Group
+            ul.list-group
+              li.list-group-item First item
+              li.list-group-item Second item
+              li.list-group-item Third item
+            h2 List Group With Badges
+            ul.list-group
+              li.list-group-item
+                span.badge 12
+                |  New
+              li.list-group-item
+                span.badge 5
+                |  Deleted
+              li.list-group-item
+                span.badge 3
+                |  Warnings
+    section
+    
+            h2 List Group With Linked Items
+            .list-group
+              a.list-group-item(href='#') First item
+              a.list-group-item(href='#') Second item
+              a.list-group-item(href='#') Third item
+            h2 Active Item in a List Group
+            .list-group
+              a.list-group-item.active(href='#') First item
+              a.list-group-item(href='#') Second item
+              a.list-group-item(href='#') Third item
+    section
+    
+            h2 List Group With a Disabled Item
+            .list-group
+              a.list-group-item.disabled(href='#') First item
+              a.list-group-item(href='#') Second item
+              a.list-group-item(href='#') Third item
+    section
+    
+            h2 List Group With Contextual Classes
+            ul.list-group
+              li.list-group-item.list-group-item-success First item
+              li.list-group-item.list-group-item-info Second item
+              li.list-group-item.list-group-item-warning Third item
+              li.list-group-item.list-group-item-danger Fourth item
+    section
+    
+            h2 Linked Items With Contextual Classes
+            .list-group
+              a.list-group-item.list-group-item-success(href='#') First item
+              a.list-group-item.list-group-item-info(href='#') Second item
+              a.list-group-item.list-group-item-warning(href='#') Third item
+              a.list-group-item.list-group-item-danger(href='#') Fourth item
+    section
+    
+            h2 List Group With Custom Content
+            .list-group
+              a.list-group-item.active(href='#')
+                h4.list-group-item-heading First List Group Item Heading
+                p.list-group-item-text List Group Item Text
+              a.list-group-item(href='#')
+                h4.list-group-item-heading Second List Group Item Heading
+                p.list-group-item-text List Group Item Text
+              a.list-group-item(href='#')
+                h4.list-group-item-heading Third List Group Item Heading
+                p.list-group-item-text List Group Item Text
 
 
 
