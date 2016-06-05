@@ -19,7 +19,7 @@ html
             .form-group
                 label.control-label.col-sm-5(for='email') Email:
                 .col-sm-7
-                    p.form-control-static someone@example.com
+                    span.form-control-static someone@example.com
             .form-group
                 label.control-label.col-sm-5(for='pwd') Password :
                 .col-sm-7
@@ -144,6 +144,7 @@ html
                         <a href="#">Tugas</a>
                         <a href="#">UAS</a>
     section
+    
               h2 Split Buttons
               .btn-group
                 button.btn.btn-primary(type='button') Numerik
@@ -154,6 +155,62 @@ html
                         <a href="#">TKPPL</a>
                         <a href="#">Jarkom</a>
                         <a href="#">PBO</a>
+    section
+    
+              h2 Dropdowns
+              .dropdown
+                button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                  | Mata Kuliah
+                  span.caret
+                ul.dropdown-menu
+                  li <a href="#">Numerik</a>
+                        <a href="#">APSI</a>
+                        <a href="#">TKPPL</a>
+                        <a href="#">Jarkom</a>
+                        <a href="#">PBO</a>
+    section
+    
+              h2 Dropdowns Header
+              .dropdown
+                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                  | Mata Kuliah
+                  span.caret
+                ul.dropdown-menu
+                  li.dropdown-header Dropdown header 1
+                        <a href="#">Numerik</a>
+                        <a href="#">APSI</a>
+                        <a href="#">TKPPL</a>
+                        <a href="#">Jarkom</a>
+                        <a href="#">PBO</a>
+    section
+    
+              h2 Dropdowns Disabled
+              .dropdown
+                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                  | Mata Kuliah
+                  span.caret
+                ul.dropdown-menu
+                  li.disabled
+                        <a href="#">Numerik</a>
+                        <a href="#">APSI</a>
+                        <a href="#">TKPPL</a>
+                        <a href="#">Jarkom</a>
+                        <a href="#">PBO</a>
+                        
+    section
+    
+              h2 Dropup
+              .dropup
+                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                  | Mata Kuliah
+                  span.caret
+                ul.dropdown-menu
+                  li <a href="#">Numerik</a>
+                        <a href="#">APSI</a>
+                        <a href="#">TKPPL</a>
+                        <a href="#">Jarkom</a>
+                        <a href="#">PBO</a>
+
 
 
     script(src='build/build.js')
