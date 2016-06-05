@@ -199,4 +199,66 @@ html
                 option Pilihan kedua
                 option Pilihan ketiga
                 option Pilihan keempat
+      section
+        
+          
+            h2 Tabs and Pills
+          
+            p Fitur tampilan menu yang lebih menarik
+          
+            h3 Tabs&nbsp;
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#home') Home
+              li
+                a(data-toggle='tab', href='#menu1') Menu 1
+              li
+                a(data-toggle='tab', href='#menu2') Menu 2
+              li
+                a(data-toggle='tab', href='#menu3') Menu 3
+            .tab-content
+              #home.tab-pane.fade.in.active
+              #menu1.tab-pane.fade
+              #menu2.tab-pane.fade
+              #menu3.tab-pane.fade
+            br
+            code class="nav nav-tabs"
+          
+            h3 Pills&nbsp;
+            ul.nav.nav-pills
+              li.active
+                a(data-toggle='tab', href='#home') Home
+              li
+                a(data-toggle='tab', href='#menu1') Menu 1
+              li
+                a(data-toggle='tab', href='#menu2') Menu 2
+              li
+                a(data-toggle='tab', href='#menu3') Menu 3
+            .tab-content
+              #home.tab-pane.fade.in.active
+              #menu1.tab-pane.fade
+              #menu2.tab-pane.fade
+              #menu3.tab-pane.fade
+            br
+            code class="nav nav-pills"
+      section
+        h2 Tabs
+        p Contoh pengimplementasian :
+        pre.
+          &lt;ul class="nav nav-tabs">
+            &lt;li class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 1&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 2&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 3&lt;/a>&lt;/li>
+          &lt;/ul>
+      section
+        h2 Pills
+        p Contoh pengimplementasian :
+        pre.
+          &lt;ul class="nav nav-pills">
+            &lt;li class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 1&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 2&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Menu 3&lt;/a>&lt;/li>
+          &lt;/ul>
     script(src='build/build.js')
