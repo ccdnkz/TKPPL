@@ -4,31 +4,224 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Project TKPPL
-    link(rel='stylesheet', type='text/css', href='build/build.css')
     link(rel='stylesheet',href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
   body
 
     article
+
       section(data-bespoke-backdrop='emphatic')
-        h1 Alert
-        p Alert digunakan untuk menampilkan suatu pemberitahuan, pada bootstrap alert dapat digunakan dengan menambah kan class <code>.alert</code> dan diikuti dengan class yang berhubungan seperti <code>.alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code>,<br> atau <code>.alert-danger</code>
+        h2 Jumbotron
+        br
+        li Berupa kotak seperti container
+        li Biasanya digunakan untuk menginformasikan sesuatu yang penting pada halaman website
+        li Defaultnya berwarna abu-abu
+        li Tag heading pada jumbotron akan diperbesar dari ukuran normalnya
+
       section(data-bespoke-backdrop='emphatic')
-        h1 Alert
-        h2 Contoh penggunaan alert-success
+        h3 Jumbotron dalam container
+        .container-fluid
+          h1 text text text
+            .jumbotron
+              h1 text text
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;h1>text text text&lt;/h1>
+          &lt;div class="jumbotron">
+          &lt;h1>text text&lt;/h1>
+          &lt;/div>
+          &lt;/div>
+
+       section(data-bespoke-backdrop='emphatic')
+        h3 Jumbotron diluar container
+        .container-fluid
+          h3 text text text
+        .jumbotron.jumbotron2
+          h3 text text
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;h3>text text text&lt;/h3>
+          &lt;div>
+          &lt;div class="jumbotron jumbotron2">
+          &lt;h3>text text&lt;/h3>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Panels
+        br
+        li Merupakan sebuah kotak yang memiliki garis dan padding
+        li Panel yang disediakan bootstrap terdiri dari Heading, Body, dan Footer
+
+      section(data-bespoke-backdrop='emphatic')
         ul
-          li
-          li Alert success <div class="alert alert-success">Contoh Alert-Success</div>
-          li Alert info <div class="alert alert-info">Contoh Alert-info</div>
-          li Alert warning <div class="alert alert-warning">Contoh Alert-warning</div>
-          li Alert danger <div class="alert alert-danger">Contoh Alert-danger</div>
+          li Panel Primary <div class="panel panel-primary"><div class="panel-heading">Contoh Panel Primary</div>Content</div>
+          li Panel Info <div class="panel panel-info"><div class="panel-heading">Contoh Panel Info</div>Content</div>
+          li Panel Danger <div class="panel panel-danger"><div class="panel-heading">Contoh Panel Danger</div>Content</div>
+        ul
+
       section(data-bespoke-backdrop='emphatic')
-        h1 Alert
-        h2 Tombol close
-        p kita juga dapat menambahkan tombol close pada alert dengan menambahkan <code>class="close"</code> dan <code>data-dismiss="alert"</code> pada suatu link atau button <br> contoh : <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
+        ul
+          li Panel Warning <div class="panel panel-warning"><div class="panel-heading">Contoh Panel Warning</div>Content</div>
+          li Panel Success <div class="panel panel-success"><div class="panel-heading">Contoh Panel Success</div>Content</div>
+        ul
+
       section(data-bespoke-backdrop='emphatic')
-        h1 Alert
-        h2 Animasi alert
-        p pada bootstrap kita dapat menambah animasi saat alert aka ditutup dengan menambah class <code>.fade</code> dan <code>.in</code><br>Contoh :<div class="alert alert-success fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Cotoh penggunaan tombol close pada alert success&nbsp;&nbsp;</div>
+        h3 Code
+        br
+        pre.
+          &lt;div class="panel panel-.......">
+          &lt;div class="panel-heading">Contoh Panel ........&lt;/div>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Forms
+        h3 3 tipe tampilan form pada Bootstrap
+        ol
+          li Vertical Form
+            ul
+              li Merupakan form default bootstrap
+            br
+          li Horizontal Form
+            ul
+              li Merupakan form dengan posisi label dan inputnya terletak horizontal
+            br
+          li Inline Form
+            ul
+              li Merupakan form yang label dan inputnya terletak sebaris
+            br
+        ol
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Vertical Form
+        br
+        p E-mail :
+        input#email.form-control(type='email', placeholder='Input E-mail')
+        br
+        p Password :
+        input#pw.form-control(type='password', placeholder='Enter Password')
+        br
+        button.btn.btn-default(type='submit') Submit
+
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;p>E-mail :&lt;/p>
+          &lt;input id="email" type="email" placeholder="Input E-mail" class="form-control">&lt;br>
+          &lt;p>Password :&lt;/p>
+          &lt;input id="pw" type="password" placeholder="Enter Password" class="form-control">&lt;br>
+          &lt;button type="submit" class="btn btn-default">Submit&lt;/button>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Horizontal Form
+        br
+        p E-mail :
+        input#email.form-horizontal(type='email', placeholder='Input E-mail')
+        br
+        p Password :
+        input#pw.form-horizontal(type='password', placeholder='Enter Password')
+        br
+        button.btn.btn-default(type='submit') Submit
+
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;p>E-mail :&lt;/p>
+          &lt;input id="email" type="email" placeholder="Input E-mail" class="form-horizontal">&lt;br>
+          &lt;p>Password :&lt;/p>
+          &lt;input id="pw" type="password" placeholder="Enter Password" class="form-horizontal">&lt;br>
+          &lt;button type="submit" class="btn btn-default">Submit&lt;/button>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Inline Form
+        br
+        p E-mail :
+        input#email.form-inline(type='email', placeholder='Input E-mail')
+        br
+        p Password :
+        input#pw.form-inline(type='password', placeholder='Enter Password')
+        br
+        button.btn.btn-default(type='submit') Submit
+
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;p>E-mail :&lt;/p>
+          &lt;input id="email" type="email" placeholder="Input E-mail" class="form-inline">&lt;br>
+          &lt;p>Password :&lt;/p>
+          &lt;input id="pw" type="password" placeholder="Enter Password" class="form-inline">&lt;br>
+          &lt;button type="submit" class="btn btn-default">Submit&lt;/button>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Grid Basic
+        h3 Sistem grid bootstrap memungkinkan 12 kolom dalam 1 halaman.
+        br
+        <div class="row">
+        .col-sm-4
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;div class="row">
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;/div>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Navigation Bar
+        h3 Navbar adalah sebuah balok navigasi yang terletak dibagian atas halaman blog
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-default">
+          &lt;div class="container-fluid">
+          &lt;div class="navbar-header">
+          &lt;a class="navbar-brand" href="#">WebSiteName&lt;/a>
+          &lt;/div>
+          &lt;ul class="nav navbar-nav">
+          &lt;li class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Page 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Page 2&lt;/a>&lt;/li> 
+          &lt;li>&lt;a href="#">Page 3&lt;/a>&lt;/li> 
+          &lt;/ul>
+          &lt;/div>
+          &lt;/nav>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Inverted Navigation Bar
+        h3 Selain default navigation bar, Bootstrap juga menyediakan navbar warna hitam.
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-inverse">
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Fixed Navigation Bar
+        h3 Posisi navbar yang tetap pada suatu bagian
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-fixed-top">
+        pre.
+          &lt;nav class="navbar navbar-inverse navbar-fixed-bottom">
+
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Affix
+        h3 
+
     script(src='build/build.js')
