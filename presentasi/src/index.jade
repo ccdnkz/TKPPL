@@ -1,0 +1,92 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Hello World
+    link(rel='stylesheet',href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+  article
+    section
+        
+        .container
+        h2 Horizontal form with static control
+        form.form-horizontal(role='form')
+            .form-group
+                label.control-label.col-sm-5(for='email') Email:
+                .col-sm-7
+                    p.form-control-static someone@example.com
+            .form-group
+                label.control-label.col-sm-5(for='pwd') Password :
+                .col-sm-7
+                    input#pwd.form-control(type='password', placeholder='Enter password')
+            .form-group
+                .col-sm-offset-2.col-sm-10
+                    button.btn.btn-default(type='submit') Submit
+        
+    section
+        
+          h2 Horizontal form: control states
+          form.form-horizontal(role='form')
+            .form-group
+              label.col-sm-5.control-label Focused
+              .col-sm-7
+                input#focusedInput.form-control(type='text', value='Click to focus...')
+            .form-group
+              label.col-sm-5.control-label(for='inputPassword') Disabled
+              .col-sm-7
+                input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+            fieldset(disabled='')
+              .form-group
+                label.col-sm-5.control-label(for='disabledTextInput') Disabled input and select list (Fieldset disabled)
+                .col-sm-7
+                  input#disabledTextInput.form-control(type='text', placeholder='Disabled input')
+              .form-group
+                label.col-sm-5.control-label(for='disabledSelect')
+                .col-sm-7
+                  select#disabledSelect.form-control
+                    option Disabled select
+            .form-group.has-success.has-feedback
+              label.col-sm-5.control-label(for='inputSuccess') Input with success and glyphicon
+              .col-sm-7
+                input#inputSuccess.form-control(type='text')
+                span.glyphicon.glyphicon-ok.form-control-feedback
+            .form-group.has-warning.has-feedback
+              label.col-sm-5.control-label(for='inputWarning') Input with warning and glyphicon
+              .col-sm-7
+                input#inputWarning.form-control(type='text')
+                span.glyphicon.glyphicon-warning-sign.form-control-feedback
+            .form-group.has-error.has-feedback
+              label.col-sm-5.control-label(for='inputError') Input with error and glyphicon
+              .col-sm-7
+                input#inputError.form-control(type='text')
+                span.glyphicon.glyphicon-remove.form-control-feedback
+    section
+    
+            h2 Inline form: control states
+            form.form-inline(role='form')
+            .form-group
+                label(for='focusedInput') Focused
+                input#focusedInput.form-control(type='text')
+            .form-group
+                label(for='inputPassword') Disabled
+                input#disabledInput.form-control(type='text', disabled='')
+            .form-group.has-success.has-feedback
+                label(for='inputSuccess2') Input with success
+                input#inputSuccess2.form-control(type='text')
+                span.glyphicon.glyphicon-ok.form-control-feedback
+            .form-group.has-warning.has-feedback
+                label(for='inputWarning2') Input with warning
+                input#inputWarning2.form-control(type='text')
+                span.glyphicon.glyphicon-warning-sign.form-control-feedback
+            .form-group.has-error.has-feedback
+                label(for='inputError2') Input with error
+                input#inputError2.form-control(type='text')
+                span.glyphicon.glyphicon-remove.form-control-feedback
+        
+
+    script(src='build/build.js')
