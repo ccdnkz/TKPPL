@@ -318,4 +318,47 @@ html
               td Medan
               td Korea
 
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Popover
+        h4 Plugin Popover mirip dengan tooltips. Popover adalah sebuah kotak pop-uo 
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        a(href='#', data-toggle='popover', title='Popover Header', data-content='Some content inside the popover') Toggle popover
+        script.
+          $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+          });
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h3 Contoh Popover
+        ul.list-inline
+          li <a href='#', title='Header', data-toggle='popover', data-placement='top', data-content='Content'> Top </a>
+          li <a href='#', title='Header', data-toggle='popover', data-placement='bottom', data-content='Content'> Bottom </a>
+          li <a href='#', title='Header', data-toggle='popover', data-placement='left', data-content='Content'> Left </a>
+          li <a href='#', title='Header', data-toggle='popover', data-placement='right', data-content='Content'> Right </a>
+        script.
+          $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+          });
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h3 Popover Example
+        a(href='#', title='Dismissible popover', data-toggle='popover', data-trigger='focus', data-content='Click anywhere in the document to close this popover') Click me
+        script.
+          $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+          });
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h3 Popover Example
+        a(href='#', title='Header', data-toggle='popover', data-content='Some content') Click Me
+        a(href='#', title='Header', data-toggle='popover', data-trigger='hover', data-content='Some content') Hover over me
+        script.
+          $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+          });
+     
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        
+
     script(src='build/build.js')
