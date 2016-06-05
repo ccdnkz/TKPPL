@@ -16,7 +16,7 @@ html
 
       section.emphatic-text(data-bespoke-backdrop='emphatic')
         h1 Button
-        h5 Button didefinisikan sebagai "tombol tekan" yang berfungsi menjalankan suatu script apabila di-klik.
+        h4 Button didefinisikan sebagai "tombol tekan" yang berfungsi menjalankan suatu script apabila di-klik.
 
       section.emphatic-text(data-bespoke-backdrop='emphatic')
         h2 Contoh-contoh Style pada Button
@@ -103,6 +103,219 @@ html
           li <span class="label label-warning">Warning Label</span>
           li <span class="label label-danger">Danger Label</span>
 
-      
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Scrollspy
+        h5 Scrollspy adalah sebuah plugin yang secara otomatis memperbaharui link dalam daftar menu berdasarkan posisi scroll kita
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        .container(data-spy='scroll', data-target='.navbar', data-offset='50')
+        #pos
+            nav.navbar.navbar-inverse.navbar-fixed-top
+          .container-fluid
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='#') WebSiteName
+
+              #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href='#section1') Section 1
+                  li
+                    a(href='#section2') Section 2
+                  li
+                    a(href='#section3') Section 3
+                  li.dropdown
+                    a.dropdown-toggle(data-toggle='dropdown', href='#')
+                      | Section 4 
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#section41') Section 4-1
+                      li
+                        a(href='#section42') Section 4-2
+        #section1.container-fluid
+          h1 Section 1
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+        #section2.container-fluid
+          h1 Section 2
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+        #section3.container-fluid
+          h1 Section 3
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+        #section41.container-fluid
+          h1 Section 4 Submenu 1
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+        #section42.container-fluid
+          h1 Section 4 Submenu 2
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+          p
+            | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Table
+        h4 Table pada Bootstrap hanya memiliki pembatas horizontal
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Contoh penggunaan Table
+        br
+        table.table
+          thead
+            tr
+              th Firstname
+              th Lastname
+              th Email
+          tbody
+            tr
+              td Jeffrey
+              td Onggo
+              td Jeref@yahoo.com
+            tr
+              td Andy
+              td Willianto
+              td AnakWarung@yahoo.com
+            tr
+              td Christine
+              td Chandra
+              td CC@yahoo.com
+            tr
+              td Feny
+              td Arifhienta
+              td fenyafrenta@yahoo.com
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h3 Dengan table-stripped kita bisa membuat tabel seperti contoh dibawah :
+        br
+        table.table.table-striped
+          thead
+            tr
+              th Firstname
+              th Lastname
+              th Email
+          tbody
+            tr
+              td Jeffrey
+              td Onggo
+              td Jeref@yahoo.com
+            tr
+              td Andy
+              td Willianto
+              td AnakWarung@yahoo.com
+            tr
+              td Christine
+              td Chandra
+              td CC@yahoo.com
+            tr
+              td Feny
+              td Arifhienta
+              td fenyafrenta@yahoo.com
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h4 Dengan menggunakan kelas table-bordered kita bisa menambahakan border/garis penghubung antar tabel
+        table.table.table-bordered
+          thead
+            tr
+              th Firstname
+              th Lastname
+              th Email
+          tbody
+            tr
+              td Jeffrey
+              td Onggo
+              td Jeref@yahoo.com
+            tr
+              td Andy
+              td Willianto
+              td AnakWarung@yahoo.com
+            tr
+              td Christine
+              td Chandra
+              td CC@yahoo.com
+            tr
+              td Feny
+              td Arifhienta
+              td fenyafrenta@yahoo.com
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h4 Kita juga bisa mengubah warna table dengan kelas Contextual
+        h4 Kelas Contextual yang bisa digunakan yaitu: .active, .success, .info, .warning, dan .danger
+        table.table
+          thead
+            tr
+              th Firstname
+              th Lastname
+              th Email
+          tbody
+            tr.success
+              td Jeffrey
+              td Onggo
+              td Jeref@yahoo.com
+            tr.info
+              td Andy
+              td Willianto
+              td AnakWarung@yahoo.com
+            tr.warning
+              td Christine
+              td Chandra
+              td CC@yahoo.com
+            tr.danger
+              td Feny
+              td Arifhienta
+              td fenyafrenta@yahoo.com
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        table.table
+          thead
+            tr
+              th No.
+              th Firstname
+              th Lastname
+              th Age
+              th City
+              th Country
+          tbody
+            tr
+              td 1
+              td Jeffrey
+              td Onggo
+              td 30
+              td Medan
+              td Arabia
+            tr
+              td 2
+              td Andy
+              td Willianto
+              td 70
+              td Medan
+              td Israel
+            tr
+              td 3
+              td Christine
+              td Chandra
+              td 15
+              td Medan
+              td Jepang
+            tr
+              td 4
+              td Feny
+              td Arifhienta
+              td 18
+              td Medan
+              td Korea
 
     script(src='build/build.js')
