@@ -8,7 +8,7 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
     link(rel='stylesheet', type='text/css', href='build/build.css')
-
+  
   body
 
     article
@@ -200,47 +200,125 @@ html
                 option Pilihan ketiga
                 option Pilihan keempat
       section
+        ul
+          li
+            h2 Input Sizing
+          li
+            p Mengatur ukuran dari elemen-elemen input yang telah kita masukkan
+          li
+            b Contoh Ukuran
+          li
+            form(role='form')
+          li
+            .form-group
+              label(for='inputdefault') 
+              p Default input
+              input#inputdefault.form-control(type='text')
+          li
+            .form-group
+              label(for='inputlg') 
+              p Large input
+              input#inputlg.form-control.input-lg(type='text')
+              span Tambahkan kode&nbsp;
+              code input-lg
+              span &nbsp;pada class input.
+          li    
+            .form-group
+              label(for='inputsm') 
+              p Small input
+              input#inputsm.form-control.input-sm(type='text')
+              span Tambahkan kode&nbsp;
+              code input-sm
+              span &nbsp;pada class input.
         
-          
-            h2 Tabs and Pills
-          
-            p Fitur tampilan menu yang lebih menarik
-          
-            h3 Tabs&nbsp;
-            ul.nav.nav-tabs
-              li.active
-                a(data-toggle='tab', href='#home') Home
-              li
-                a(data-toggle='tab', href='#menu1') Menu 1
-              li
-                a(data-toggle='tab', href='#menu2') Menu 2
-              li
-                a(data-toggle='tab', href='#menu3') Menu 3
-            .tab-content
-              #home.tab-pane.fade.in.active
-              #menu1.tab-pane.fade
-              #menu2.tab-pane.fade
-              #menu3.tab-pane.fade
+      section
+        ul
+          li
+            h2 Input Sizing : Form-Group
+          li
+            p Kita juga dapat membuat kelompok input-lg atau input-sm secara singkat
+          li
+            span Caranya adalah dengan menambahkan&nbsp;
+            code form-group-lg
+            span &nbsp; atau&nbsp;
+            code form-group-sm
+            span &nbsp;pada class div
+          li
+            b Contoh&nbsp;
+            code form-group-lg
             br
-            code class="nav nav-tabs"
-          
-            h3 Pills&nbsp;
-            ul.nav.nav-pills
-              li.active
-                a(data-toggle='tab', href='#home') Home
-              li
-                a(data-toggle='tab', href='#menu1') Menu 1
-              li
-                a(data-toggle='tab', href='#menu2') Menu 2
-              li
-                a(data-toggle='tab', href='#menu3') Menu 3
-            .tab-content
-              #home.tab-pane.fade.in.active
-              #menu1.tab-pane.fade
-              #menu2.tab-pane.fade
-              #menu3.tab-pane.fade
+            .form-group.form-group-lg
+              label.col-sm-2.control-label(for='lg') form-group-lg
+              .col-sm-10
+                input#lg.form-control(type='text')
             br
-            code class="nav nav-pills"
+            br
+            pre.
+              &lt;div class="form-group form-group-lg">
+                &lt;label class="col-sm-2 control-label" for="lg">form-group-lg</label>
+                &lt;div class="col-sm-10">
+                  &lt;input class="form-control" type="text" id="lg">
+                &lt;/div>
+              &lt;/div>
+      section
+        ul    
+          li
+            b Contoh&nbsp;
+            code form-group-sm
+            br
+            .form-group.form-group-sm
+              label.col-sm-2.control-label(for='sm') form-group-sm
+              .col-sm-10
+                input#lg.form-control(type='text')
+            br
+            br
+            pre.
+              &lt;div class="form-group form-group-lg">
+                &lt;label class="col-sm-2 control-label" for="lg">form-group-lg</label>
+                &lt;div class="col-sm-10">
+                  &lt;input class="form-control" type="text" id="lg">
+                &lt;/div>
+              &lt;/div>
+      section
+          h2 Tabs and Pills
+        
+          p Fitur tampilan menu yang lebih menarik
+        
+          h3 Tabs&nbsp;
+          ul.nav.nav-tabs
+            li.active
+              a(data-toggle='tab', href='#home') Home
+            li
+              a(data-toggle='tab', href='#menu1') Menu 1
+            li
+              a(data-toggle='tab', href='#menu2') Menu 2
+            li
+              a(data-toggle='tab', href='#menu3') Menu 3
+          .tab-content
+            #home.tab-pane.fade.in.active
+            #menu1.tab-pane.fade
+            #menu2.tab-pane.fade
+            #menu3.tab-pane.fade
+          br
+          code class="nav nav-tabs"
+          
+          h3 Pills&nbsp;
+          ul.nav.nav-pills
+            li.active
+              a(data-toggle='tab', href='#home') Home
+            li
+              a(data-toggle='tab', href='#menu1') Menu 1
+            li
+              a(data-toggle='tab', href='#menu2') Menu 2
+            li
+              a(data-toggle='tab', href='#menu3') Menu 3
+          .tab-content
+            #home.tab-pane.fade.in.active
+            #menu1.tab-pane.fade
+            #menu2.tab-pane.fade
+            #menu3.tab-pane.fade
+          br
+          code class="nav nav-pills"
       section
         h2 Tabs
         p Contoh pengimplementasian :
