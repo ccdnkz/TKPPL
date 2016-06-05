@@ -276,6 +276,111 @@ html
               a.list-group-item(href='#')
                 h4.list-group-item-heading Third List Group Item Heading
                 p.list-group-item-text List Group Item Text
+    section
+    
+            h3 Tooltip Example
+            a(href='#', data-toggle='tooltip', title='GO AWAY!!!') Hover over me
+          script.
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            });
+    section
+    
+            h3 Tooltip Example
+            p The data-placement attribute specifies the tooltip position.
+            ul.list-inline
+              li
+                a(href='#', data-toggle='tooltip', data-placement='top', title='Hooray!') Top
+              li
+                a(href='#', data-toggle='tooltip', data-placement='bottom', title='Hooray!') Bottom
+              li
+                a(href='#', data-toggle='tooltip', data-placement='left', title='Hooray!') Left
+              li
+                a(href='#', data-toggle='tooltip', data-placement='right', title='Hooray!') Right
+          script.
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            });
+    section
+    
+            h2 Pagination
+            p The .pagination class provides pagination links:
+            ul.pagination
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+            h2 Pagination - Active State
+            p Add class .active to let the user know which page he/she is on:
+            ul.pagination
+              li
+                a(href='#') 1
+              li.active
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+    section
+    
+            h2 Pagination - Disabled State
+            p Add class .disabled if a page for some reason is disabled:
+            ul.pagination
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li.disabled
+                a(href='#') 4
+              li
+                a(href='#') 5
+            h2 Pagination - Sizing
+            p Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks:
+            ul.pagination.pagination-lg
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+            ul.pagination.pagination-sm
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+    section
+            h2 Breadcrumbs
+            p
+              | The .breadcrumb class indicates the current page's location within a navigational hierarchy:
+            ul.breadcrumb
+              li
+                a(href='#') Home
+              li
+                a(href='#') Private
+              li
+                a(href='#') Pictures
+              li.active Vacation
+
 
 
 
