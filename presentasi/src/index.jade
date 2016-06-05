@@ -87,6 +87,73 @@ html
                 label(for='inputError2') Input with error
                 input#inputError2.form-control(type='text')
                 span.glyphicon.glyphicon-remove.form-control-feedback
+    section
+    
+              h2 Horizontal Button Group
+              .btn-group
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary(type='button') APSI
+                button.btn.btn-primary(type='button') TKPPL
+                button.btn.btn-primary(type='button') Jarkom
+                button.btn.btn-primary(type='button') PBO
+              h2 Vertical Button Group
+              .btn-group-vertical
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary(type='button') APSI
+                button.btn.btn-primary(type='button') TKPPL
+                button.btn.btn-primary(type='button') Jarkom
+                button.btn.btn-primary(type='button') PBO
+    section
         
+            
+              h2 Justified Button Groups
+              .btn-group.btn-group-justified
+                a.btn.btn-primary(href='#') Numerik
+                a.btn.btn-primary(href='#') APSI
+                a.btn.btn-primary(href='#') TKPPL
+                a.btn.btn-primary(href='#') Jarkom
+                a.btn.btn-primary(href='#') PBO
+              h3 Large Buttons:
+              .btn-group.btn-group-lg
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary(type='button') APSI
+                button.btn.btn-primary(type='button') TKPPL
+                button.btn.btn-primary(type='button') Jarkom
+                button.btn.btn-primary(type='button') PBO
+              h3 Extra Small Buttons:
+              .btn-group.btn-group-xs
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary(type='button') APSI
+                button.btn.btn-primary(type='button') TKPPL
+                button.btn.btn-primary(type='button') Jarkom
+                button.btn.btn-primary(type='button') PBO
+    section
+    
+              h2 Nesting Button Groups
+              .btn-group
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary(type='button') APSI
+                button.btn.btn-primary(type='button') Jarkom
+                button.btn.btn-primary(type='button') PBO
+                .btn-group
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                    span TKPPL 
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li <a href="#">UTS</a>
+                        <a href="#">Tugas</a>
+                        <a href="#">UAS</a>
+    section
+              h2 Split Buttons
+              .btn-group
+                button.btn.btn-primary(type='button') Numerik
+                button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                    span.caret
+                ul.dropdown-menu(role='menu')
+                    li <a href="#">APSI</a>
+                        <a href="#">TKPPL</a>
+                        <a href="#">Jarkom</a>
+                        <a href="#">PBO</a>
+
 
     script(src='build/build.js')
