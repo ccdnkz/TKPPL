@@ -1,0 +1,284 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Project TKPPL
+    link(rel='stylesheet',href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Jumbotron
+        br
+        li Berupa kotak seperti container
+        li Biasanya digunakan untuk menginformasikan sesuatu yang penting pada halaman website
+        li Defaultnya berwarna abu-abu
+        li Tag heading pada jumbotron akan diperbesar dari ukuran normalnya
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Jumbotron dalam container
+        .container-fluid
+          h1 text text text
+            .jumbotron
+              h1 text text
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;h1>text text text&lt;/h1>
+          &lt;div class="jumbotron">
+          &lt;h1>text text&lt;/h1>
+          &lt;/div>
+          &lt;/div>
+
+       section(data-bespoke-backdrop='emphatic')
+        h3 Jumbotron diluar container
+        .container-fluid
+          h3 text text text
+        .jumbotron.jumbotron2
+          h3 text text
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;h3>text text text&lt;/h3>
+          &lt;div>
+          &lt;div class="jumbotron jumbotron2">
+          &lt;h3>text text&lt;/h3>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Panels
+        br
+        li Merupakan sebuah kotak yang memiliki garis dan padding
+        li Panel yang disediakan bootstrap terdiri dari Heading, Body, dan Footer
+
+      section(data-bespoke-backdrop='emphatic')
+        ul
+          li Panel Primary <div class="panel panel-primary"><div class="panel-heading">Contoh Panel Primary</div>Content</div>
+          li Panel Info <div class="panel panel-info"><div class="panel-heading">Contoh Panel Info</div>Content</div>
+          li Panel Danger <div class="panel panel-danger"><div class="panel-heading">Contoh Panel Danger</div>Content</div>
+        ul
+
+      section(data-bespoke-backdrop='emphatic')
+        ul
+          li Panel Warning <div class="panel panel-warning"><div class="panel-heading">Contoh Panel Warning</div>Content</div>
+          li Panel Success <div class="panel panel-success"><div class="panel-heading">Contoh Panel Success</div>Content</div>
+        ul
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;div class="panel panel-.......">
+          &lt;div class="panel-heading">Contoh Panel ........&lt;/div>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Forms
+        h3 3 tipe tampilan form pada Bootstrap
+        ol
+          li Vertical Form
+            ul
+              li Merupakan form default bootstrap
+            br
+          li Horizontal Form
+            ul
+              li Merupakan form dengan posisi label dan inputnya terletak horizontal
+            br
+          li Inline Form
+            ul
+              li Merupakan form yang label dan inputnya terletak sebaris
+            br
+        ol
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Vertical Form
+        br
+        span E-mail :
+        input#email.form-control(type='email', placeholder='Input E-mail')
+        br
+        span Password :
+        input#pw.form-control(type='password', placeholder='Enter Password')
+        br
+        button.btn.btn-default(type='submit') Submit
+
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;span>E-mail :&lt;/span>
+          &lt;input id="email" type="email" placeholder="Input E-mail" class="form-control">&lt;br>
+          &lt;span>Password :&lt;/p>
+          &lt;input id="pw" type="password" placeholder="Enter Password" class="form-control">&lt;br>
+          &lt;button type="submit" class="btn btn-default">Submit&lt;/button>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Horizontal Form
+        br
+        .container
+        form.form-horizontal
+          .form-group
+            label.control-label.col-sm-2(for='email') E-mail:
+            .col-sm-10
+              input.form-control(type='text')
+          .form-group
+            label.control-label.col-sm-2(for='pw') Password:
+            .col-sm-10
+              input#alamat.form-control(type='text')
+          button.btn.btn-danger(type='submit') Submit
+
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;div class="container">&lt;/div>
+          &lt;form class="form-horizontal">
+          &lt;div class="form-group">
+          &lt;label for="email" class="control-label col-sm-2">E-mail:&lt;/label>
+          &lt;div class="col-sm-10">
+          &lt;input type="text" class="form-control">
+          &lt;/div>
+          &lt;/div>
+          &lt;div class="form-group">
+          &lt;label for="pw" class="control-label col-sm-2">Password:&lt;/label>
+          &lt;div class="col-sm-10">
+          &lt;input id="alamat" type="text" class="form-control">
+          &lt;/div>
+          &lt;/div>
+          &lt;button type="submit" class="btn btn-danger">Submit&lt;/button>
+          &lt;/form>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Inline Form
+        br
+        .container
+        form.form-inline
+          .form-group
+            label(for='nama') E-mail :
+            input.form-control(type='text')
+          .form-group
+            label(for='alamat') Password :
+            input#alamat.form-control(type='text')
+          br
+          br
+          button.btn.btn-primary(type='submit') Submit
+
+      section(data-bespoke-backdrop='emphatic')
+        h3 Code
+        br
+        pre.
+          &lt;div class="container">&lt;/div>
+          &lt;form class="form-inline">
+          &lt;div class="form-group">
+          &lt;label for="nama">E-mail :&lt;/label>
+          &lt;input type="text" class="form-control">
+          &lt;/div>
+          &lt;div class="form-group">
+          &lt;label for="alamat">Password :&lt;/label>
+          &lt;input id="alamat" type="text" class="form-control">
+          &lt;/div>&lt;br>&lt;br>
+          &lt;button type="submit" class="btn btn-primary">Submit&lt;/button>
+          &lt;/form>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Grid Basic
+        li Pola geometris yang membagi halaman menjadi vertikal dan horizontal
+        li Grid System bootstrap dibagi dalam 12 kolom dan 4 macam ukuran
+        ol
+          li col-xs-*
+          li col-sm-*
+          li col-md-*
+          li col-lg-*
+
+      section(data-bespoke-backdrop='emphatic')
+        .row
+          .col-sm-4 .col-sm-4
+          .col-sm-4 .col-sm-4
+          .col-sm-4 .col-sm-4
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;div class="container-fluid">
+          &lt;div class="row">
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;div class="col-sm-*">.col-sm-*&lt;/div>
+          &lt;/div>
+          &lt;/div>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Navigation Bar
+        h3 Merupakan suatu bar panjang berbentuk frame yang berisi berbagai menu navigasi dengan fungsi-fungsi tertentu
+
+        nav.navbar.navbar-default
+          .container-fluid
+            .navbar-header
+              a.navbar-brand(href='#') Navigation
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#') Profil
+              li
+                a(href='#') Tentang Kami
+              li
+                a(href='#') Kontak
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#')
+                  span.glyphicon.glyphicon-user
+                  |  Daftar
+              li
+                a(href='#')
+                  span.glyphicon.glyphicon-log-in
+                  |  Login
+
+      section(data-bespoke-backdrop='emphatic')
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-default">
+          &lt;div class="container-fluid">
+          &lt;div class="navbar-header">
+          &lt;a href="#" class="navbar-brand">Navigation</a></div>
+          &lt;ul class="nav navbar-nav">
+          &lt;li class="active">&lt;a href="#">Home</a></li>
+          &lt;li>&lt;a href="#">Profil</a></li>
+          &lt;li>&lt;a href="#">Tentang Kami</a></li>
+          &lt;li>&lt;a href="#">Kontak</a></li>
+          &lt;/ul>
+          &lt;ul class="nav navbar-nav navbar-right">
+          &lt;li>&lt;a href="#">&lt;span class="glyphicon glyphicon-user"></span> Daftar&lt;/a></li>
+          &lt;li>&lt;a href="#">&lt;span class="glyphicon glyphicon-log-in">&lt;/span> Login&lt;/a></li>
+          &lt;/ul>
+          &lt;/div>
+          &lt;/nav>
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Inverted Navigation Bar
+        h3 Selain default navigation bar, Bootstrap juga menyediakan navbar warna hitam.
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-inverse">
+
+      section(data-bespoke-backdrop='emphatic')
+        h2 Fixed Navigation Bar
+        h3 Posisi navbar yang tetap pada suatu bagian
+        p Code
+        pre.
+          &lt;nav class="navbar navbar-fixed-top">
+        pre.
+          &lt;nav class="navbar navbar-inverse navbar-fixed-bottom">
+
+    script(src='build/build.js')
